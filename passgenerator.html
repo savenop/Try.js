@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="passgenerator.css">
+</head>
+<body>
+    <div class="container">
+        <div id="copy-notification">Copied!</div>
+        <h1>Generate a  Random <span>Password</span></h1>
+
+        <div class="display" onclick="copypass()">
+            <input type="text" id="Password" placeholder="Password" readonly>
+            <img src="assets/copy.png" onclick="copypass()">
+        </div>
+
+        <button onclick="pass()" id="btn">GENERATE</button>
+    </div>
+
+    <script src="passgenerator.js"></script>
+</body>
+</html>
