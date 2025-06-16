@@ -8,17 +8,40 @@ font-family: "Poppins", sans-serif;
 }
 
 body {
+    height: auto;
     background-color: #181818;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero {
+    text-align: center;
+    font-size: 80px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+}
+
+.hero h2 {
+    font-family: "Caveat", cursive;
+    font-weight: 100;
+    margin-bottom: 25px;
+    margin-top: 20px;
 }
 
 .main {
-    height: 100vh;
-    width: 100vw;
+    height: 1000px;
+    width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px; /* Add spacing between cards */
-    flex-direction: row; /* Ensure cards are in a row */
+    gap: 30px; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 .card {
