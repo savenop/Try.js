@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #0A0A0A;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    border-bottom: 1px solid #2b2a2a;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
+}
+
+.nav-logo {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.nav-brandname {
+    font-size: 24px;
+    background: -webkit-linear-gradient(#42A5F5, #1976D2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-right {
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 125px;
+    align-items: center;
+    margin-left: 85px;
+}
+
+.nav-dark-img {
+    background-color: white;
+    border-radius: 12%; 
+    height: 38px;
+    width: 38px;
+    position: relative;
+    right: 10px;
+}
+
+.nav-btn1 {
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    color: #0A0A0A;
+    padding: 8px 16px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.nav-btn2 {
+    font-size: 14px;
+    border: none;
+    background-image: linear-gradient(#42A5F5, #1976D2);
+    color: white;
+    padding: 8px 16px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+
+.hero {
+    letter-spacing: -4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-text {
+    line-height: 70px;
+    text-align: center;
+    width: 700px;
+    padding-bottom: 30px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(white, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 680;
+}
+
+.main-text-span {
+    font-size: 80px;
+    background: -webkit-linear-gradient(#42A5F5, #1976D2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.scn-text {
+    color: #C9CACC;
+    font-size: 19px;
+    position: relative;
+    top: 53px;
+    letter-spacing: 0px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons as needed */
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px; /* Optional: adjust vertical spacing */
+}
+
+.btn3 {
+    font-size: 14px;
+    border: none;
+    background-image: linear-gradient(#42A5F5, #1976D2);
+    color: white;
+    padding: 13px 35px;
+    border-radius: 7px;
+    letter-spacing: 0px;
+}
+
+.btn4 {
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    color: #0A0A0A;
+    padding: 13px 35px;
+    border-radius: 7px;
+    letter-spacing: 0px;
+}
+
+.carousel-container {
+    width: 90%;
+    margin: 70px auto 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    width: max-content; /* Allow content to overflow horizontally */
+    justify-content: flex-start;
+    align-items: center;
+    /* Remove width: 100% to allow scrolling */
+}
+
+.carousel-img {
+    border: 3px solid #2b2a2a;
+    width: 384px;
+    height: 216px;
+    min-width: 384px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: filter 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+
+
+/* Class to pause carousel scrolling */
+.carousel-paused {
+    pointer-events: auto;
+}
+
+.blue-dabba { 
+    width: 77%;
+    height: 240px;
+    background-image: linear-gradient(#5EA3F9,#285DDE);
+    border-radius: 31px;
+    padding: 50px;
+    margin-top: 100px;
+   
+    position: relative; /* Add for positioning child */
+    overflow: hidden;   /* Hide lower part of phone */
+    display: flex;
+    align-items: flex-start;
+    top: -50px;
+}
+
+.all-blue {
+    position: relative;
+    top: -29px;
+    right: 20px;
+    z-index: 1;
+    /* Remove phone positioning from here */
+}
+
+.blue-phone {
+    position: absolute;
+    left: 65%;
+    top: 40px; /* Move up so only top half shows */
+    transform: rotate(4deg);
+    height: 760px;
+    z-index: 2;
+    transition: 
+        transform 0.4s cubic-bezier(.25,.8,.25,1),
+        box-shadow 0.4s;
+}
+
+.blue-dabba:hover .blue-phone {
+    transform: translateY(-6px) rotate(8deg) scale(1.02);
+}
+
+.blue-h1 {
+    color: white;
+    letter-spacing: -1px;
+    font-size: 32px;
+}
+
+.blue-p {
+    color: white;
+    letter-spacing: 0px;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.blue-btn1 {
+    font-size: 14px;
+    color: black;
+    border-radius: 6px;
+    background-color: white;
+    padding: 13px 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.blue-btn1-img {
+    height: 17px;
+}
+
+.blue-btn2 {
+    color: white;
+    border-radius: 6px;
+    background-color: #1a2434;
+    padding: 13px 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.blue-btn2-img {
+    height: 20px;
+}
+
+.fotter {
+    width: 100%;
+    height: 310px;
+    border-top: 1px solid #2b2a2a;
+}
+
+.cum1 {
+    width: 19%;
+    height: 80px;
+    margin: 40px;
+    position: relative;
+    left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.cum1-logo {
+
+}
+
+.cum1-img {
+    height: 64px;
+    border-radius: 50%;
+}
+
+.cum1-right {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.cum1-h {
+    position: relative;
+    font-size: 36px;
+    color: white;
+    background: -webkit-linear-gradient(#42A5F5, #1976D2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cum1-p {
+    letter-spacing: 0px;
+    font-size: 18px;
+    position: relative;
+    top: -8px;
+    color: white;
+    padding-left: 4px;
+    
+}
+
+.cum2 {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 130px;
+
+}
+
+.cum2-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cum2-p {
+    letter-spacing: 0;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    top: -10px;
+}
+
+.cum2-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.cum2-btn1, .cum2-btn2, .cum2-btn3, .cum2-btn4 {
+    height: 40px;
+    width: 40px;    
+    border-radius: 8px;
+    border: none;
+    background-color: #101A2C;
+}
+
+.cum2-btn-img1, .cum2-btn-img2, .cum2-btn-img3, .cum2-btn-img4 {
+    height: 40px;
+}
+
+.cum3-4 {
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 200px;
+    height: 200px;
+    width: 900px;
+    position: relative;
+    right: -600px;
+    bottom: 180px;
+}
+
+.cum3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 100px;
+}
+
+.cum3-1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: -13px;
+}
+
+.cum3-2, .cum3-3 {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+.cum4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 140px;
+    position: relative;
+    top: -3px;
+}
+
+.cum4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 100px;
+    top: 7px;
+}
+
+.cum4-1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: -13px;
+}
+
+.cum4-2, .cum4-2, .cum4-3, .cum4-4 {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}

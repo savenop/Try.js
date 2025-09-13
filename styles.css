@@ -43,7 +43,7 @@ body {
 }
 
 .main {
-    height: 1000px;
+    height: 100%;
     width: 90vw;
     display: flex;
     justify-content: center;

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(safe-to-keep-laptop-like-this-lol-v0-gu655uubprwe1.webp);
+    background-size: cover;
+}
+
+.card {
+    height: auto;
+    width: 350px;
+    backdrop-filter: blur(9px);
+    border-radius: 11px;
+    padding-bottom: 50px;
+    box-shadow: 2px 4px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    scale: 105%;
+    box-shadow: 7px 10px 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+h1 {
+    padding-top: 50px;
+    color: white;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 8px;
+}
+
+p {
+    padding: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;    
+    color: white;
+    letter-spacing: 1px;
+}
+
+button {
+    padding: 10px;
+    width: 90%;
+    border-radius: 6px;
+    background-color: aqua;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    border: none;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+

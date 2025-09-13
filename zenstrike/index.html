@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenStrike Tournaments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<style>
+    body {
+        background-color: #0E0E0E; 
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .tournament-card {
+        background-color: #1E1E1E;
+    }
+    .image-box {
+        background-color: black;
+    }
+    .faq-card {
+        background-color: #1E1E1E;
+    }
+</style>
+
+<!--Body-->
+<body class="text-white">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-4 bg-[#0E0E0E]" data-aos="fade-down" data-aos-duration="1000">
+        <div class="px-8 text-xl font-bold">ZenStrike</div>
+        <div class="hidden md:flex text-s space-x-6 items-center">
+            <a href="#">Home</a>
+            <a href="#">Info</a>
+            <a href="#">Format</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+            <button class="px-5 py-2 border border-white rounded">Sign In</button>
+            <button class="px-5 py-2 bg-white text-black rounded">Register</button>
+        </div>
+        <div class="md:hidden">
+            <button id="menuButton" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden text-center">
+        <a href="#" class="block px-4 py-2">Home</a>
+        <a href="#" class="block px-4 py-2">Info</a>
+        <a href="#" class="block px-4 py-2">Format</a>
+        <a href="#" class="block px-4 py-2">FAQ</a>
+        <a href="#" class="block px-4 py-2">Contact</a>
+        <button class="block w-full px-4 py-2 border border-white rounded">Sign In</button>
+        <button class="block w-full px-4 py-2 bg-white text-black rounded">Register</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="text-center flex flex-col justify-center items-center h-screen" data-aos="fade-down" data-aos-duration="1000">
+        <h1 class="text-5xl font-bold">ZenStrike Tournaments</h1>
+        <p class="text-gray-400 text-lg mt-2">Compete . Conquer . Cash Out</p>
+        <button class="mt-6 px-6 py-3 bg-white text-black font-semibold rounded hover:bg-gray-300">
+            Register Now
+        </button>
+    </section>
+    
+    <!-- Ongoing Tournaments -->
+    <section class="p-4 md:p-10" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-3xl font-bold text-center">Ongoing Tournaments</h2>
+        <div id="tournamentContainer" class="p-4 md:p-10 flex flex-wrap justify-center gap-4 mt-10 overflow-x-auto">
+            <!-- Tournament Card -->
+            <div class="tournament-card p-4 rounded-[21px] w-full sm:w-[300px] h-[450px] relative mb-4" data-aos="fade-in" data-aos-duration="700">
+                <span class="absolute top-2 right-2 bg-green-900 text-xs px-1 py-1 rounded-[500px]">🟢</span>
+                <div class="image-box w-full h-[247px] rounded-[21px]"></div> <!-- Placeholder for image -->
+                <h3 class="text-lg font-semibold mt-2">WARFRONT CUP</h3>
+                <ul class="list-disc list-inside text-gray-400 mt-2">
+                    <li>Date - 25 March 2025</li>
+                    <li>Entry Fee - ₹100</li>
+                    <li>Prize Poll - ₹3K</li>
+                </ul>
+                <button class="w-full sm:w-[266px] absolute bottom-4 left-4 px-4 py-2 bg-white text-black font-semibold rounded-xl hover:bg-gray-300">
+                    Register
+                </button>
+            </div>
+
+            <div class="tournament-card p-4 rounded-[21px] w-full sm:w-[300px] h-[450px] relative mb-4" data-aos="fade-in" data-aos-duration="700">
+                <div class="image-box w-full h-[247px] rounded-[21px]"></div> <!-- Placeholder for image -->
+                <h3 class="text-lg font-semibold mt-2">TDM Survival</h3>
+                <ul class="list-disc list-inside text-gray-400 mt-2">
+                    <li>Date - 25 March 2025</li>
+                    <li>Entry Fee - ₹100</li>
+                    <li>Prize Poll - ₹3K</li>
+                </ul>
+                <button class="w-full sm:w-[266px] absolute bottom-4 left-4 px-4 py-2 bg-white text-black font-semibold rounded-xl hover:bg-gray-300">
+                    Register
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="p-4 md:p-[120px]" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-3xl font-bold text-center mb-10">Why Choose Us ?</h2>
+        <div class="space-y-10">
+            <div class="flex flex-col md:flex-row items-center md:space-x-10 text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+                <div class="md:w-1/2 flex flex-col justify-center">
+                    <h3 class="text-[32px] font-bold">Fair Competition</h3>
+                    <p class="text-gray-400 mt-2">At ZenStrike Tournaments, we ensure a fair and competitive gaming environment where skill and strategy determine the winner. Our strict anti-cheat policies and real-time monitoring prevent unfair practices, maintaining the integrity of every match. With advanced security measures in place, players can compete confidently, knowing that every tournament is transparent and free from manipulation.</p>
+                </div>
+                <div class="hidden md:flex md:w-1/2 justify-center md:justify-end mt-4 md:mt-0 items-center">
+                    <div class="w-96 h-96 bg-black rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row-reverse items-center md:space-x-10 md:space-x-reverse text-center md:text-left" data-aos="fade-left" data-aos-duration="1000">
+                <div class="md:w-1/2 flex flex-col justify-center">
+                    <h3 class="text-[32px] font-bold">Smooth Registration</h3>
+                    <p class="text-gray-400 mt-2">ZenStrike Tournaments offers a fast and hassle-free registration process, allowing players to join tournaments in just a few clicks. Our streamlined system eliminates unnecessary steps, ensuring a smooth and efficient sign-up experience. With a user-friendly interface and clear instructions, players can quickly secure their spot and focus on competing without any delays.</p>
+                </div>
+                <div class="hidden md:flex md:w-1/2 justify-center md:justify-start mt-4 md:mt-0 items-center">
+                    <div class="w-96 h-96 bg-black rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:space-x-10 text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+                <div class="md:w-1/2 flex flex-col justify-center">
+                    <h3 class="text-[32px] font-bold">Fast & Secure Payouts</h3>
+                    <p class="text-gray-400 mt-2">ZenStrike Tournaments ensures fast and secure payouts, allowing winners to receive their earnings without unnecessary delays. Our reliable payment system supports multiple withdrawal options, enabling players to choose the method that suits them best. By ensuring smooth transactions with speed and security, players can trust that their winnings will be processed quickly and securely.</p>
+                </div>
+                <div class="hidden md:flex md:w-1/2 justify-center md:justify-end mt-4 md:mt-0 items-center">
+                    <div class="w-96 h-96 bg-black rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="p-4 md:p-[100px]" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-3xl font-bold text-center mb-10">FAQ</h2>
+        <div id="faqContainer" class="space-y-4">
+            <div class="faq-card p-4 rounded-lg" data-aos="fade-up" data-aos-duration="500">
+                <button class="w-full text-left text-lg font-semibold focus:outline-none" onclick="toggleAccordion('faq1')">What is ZenStrike Tournaments?</button>
+                <div id="faq1" class="hidden mt-2 text-gray-400">
+                    <p>Demo text for FAQ 1. You can edit this text later.</p>
+                </div>
+            </div>
+            <div class="faq-card p-4 rounded-lg" data-aos="fade-up" data-aos-duration="600">
+                <button class="w-full text-left text-lg font-semibold focus:outline-none" onclick="toggleAccordion('faq2')">How do I register for a tournament?</button>
+                <div id="faq2" class="hidden mt-2 text-gray-400">
+                    <p>Demo text for FAQ 2. You can edit this text later.</p>
+                </div>
+            </div>
+            <div class="faq-card p-4 rounded-lg" data-aos="fade-up" data-aos-duration="700">
+                <button class="w-full text-left text-lg font-semibold focus:outline-none" onclick="toggleAccordion('faq3')">What are the rules for participating?</button>
+                <div id="faq3" class="hidden mt-2 text-gray-400">
+                    <p>Demo text for FAQ 3. You can edit this text later.</p>
+                </div>
+            </div>
+            <div class="faq-card p-4 rounded-lg" data-aos="fade-up" data-aos-duration="800">
+                <button class="w-full text-left text-lg font-semibold focus:outline-none" onclick="toggleAccordion('faq4')">How do I receive my winnings?</button>
+                <div id="faq4" class="hidden mt-2 text-gray-400">
+                    <p>Demo text for FAQ 4. You can edit this text later.</p>
+                </div>
+            </div>
+            <div class="faq-card p-4 rounded-lg" data-aos="fade-up" data-aos-duration="900">
+                <button class="w-full text-left text-lg font-semibold focus:outline-none" onclick="toggleAccordion('faq5')">Who can I contact for support?</button>
+                <div id="faq5" class="hidden mt-2 text-gray-400">
+                    <p>Demo text for FAQ 5. You can edit this text later.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+        function toggleAccordion(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+
+        document.getElementById('menuButton').addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="w-full h-[50px] text-center py-2 bg-[#1E1E1E] text-gray-300">
+        Made and Managed by Devansh Chaudhary & ❤ :)
+    </footer>
+
+</body>
+</html>

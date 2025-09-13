@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do Pro</title>
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>To-Do Pro ✨</h1>
+      <button id="theme-toggle">🌙</button>
+    </header>
+
+    <section id="todo-input">
+      <input type="text" id="new-task" placeholder="What's your next task?">
+      <button id="add-task">Add</button>
+    </section>
+
+    <section id="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="active">Active</button>
+      <button class="filter" data-filter="completed">Completed</button>
+    </section>
+
+    <ul id="task-list">
+    </ul>
+
+    <footer>
+      <p>Made with ❤️ by @devanshh07_</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
